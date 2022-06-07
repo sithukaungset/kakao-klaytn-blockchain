@@ -1,0 +1,66 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+#*       @global-owner1 @global-owner2
+*       @kjhman21 @KimKyungup @aidan-kwon @jeongkyun-oh
+
+# Order is important; the last matching pattern takes the most
+# precedence. When someone opens a pull request that only
+# modifies JS files, only @js-owner and not the global
+# owner(s) will be requested for a review.
+#*.js    @js-owner
+
+# You can also use email addresses if you prefer. They'll be
+# used to look up users just like we do for commit author
+# emails.
+#*.go docs@example.com
+
+# In this example, @doctocat owns any files in the build/logs
+# directory at the root of the repository and any of its
+# subdirectories.
+#/build/logs/      @doctocat
+
+# The `docs/*` pattern will match files like
+# `docs/getting-started.md` but not further nested files like
+# `docs/build-app/troubleshooting.md`.
+#docs/*  docs@example.com
+
+# In this example, @octocat owns any file in an apps directory
+# anywhere in your repository.
+#apps/ @octocat
+
+# In this example, @doctocat owns any file in the `/docs`
+# directory in the root of your repository.
+#/docs/ @doctocat
+/accounts/
+/api/           @jimni1222 @sirano11 @aeharvlee
+/blockchain/    @KimKyungup @aidan-kwon @jeongkyun-oh @ehnuje
+/build/         @aidan-kwon @henry-will @nohkwak @2dvorak
+/client/        @aidan-kwon @aeharvlee @henry-will @nohkwak @hyunsooda
+/cmd/           @aidan-kwon @henry-will @nohkwak @2dvorak
+/common/
+/consensus/     @aidan-kwon @jiseongnoh @yoomee1313 @mckim19
+/console/       @jimni1222 @sirano11 @aeharvlee
+/contracts/     @kjhman21 @KimKyungup @aidan-kwon @blukat29 @ian0371 @henry-will @hyunsooda @hqjang-pepper
+/crypto/
+/datasync/      @KimKyungup @ethan-kr @jeongkyun-oh @ehnuje
+/db_migration/  @KimKyungup @ethan-kr @jeongkyun-oh @ehnuje
+/event/
+/fork/          @KimKyungup @aidan-kwon @yoomee1313
+/governance/    @aidan-kwon @blukat29 @ian0371 @yoomee1313 @mckim19
+/kerrors/
+/log/
+/metrics/
+/networks/      @KimKyungup @aidan-kwon @jiseongnoh @mckim19 @ehnuje
+/node/          @KimKyungup @aidan-kwon @ehnuje @henry-will @hyunsooda @hqjang-pepper
+/params/
+/reward/        @KimKyungup @aidan-kwon @blukat29 @ian0371
+/ser/
+/storage/       @KimKyungup @ethan-kr @jeongkyun-oh @ehnuje
+/tests/
+/utils/
+/work/          @KimKyungup @aidan-kwon @jiseongnoh @yoomee1313 @mckim19
